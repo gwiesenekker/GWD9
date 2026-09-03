@@ -1,13 +1,16 @@
 # GWD9
 
+GWD developed by GW and ChatGPT.
+
 This is the new C implementation of GWD for International draughts. The main
 program is the `master` thread; with the default of one thread it creates no
 slaves and runs single-threaded.
 
 The board uses four compact 50-bit bitboards, one for each colour and piece
 kind. Legal move generation incorporates the generator developed and tested
-for the endgame-tablebase project. It implements flying kings, backward captures by men, mandatory
-capture, and the maximum-capture rule. Board-level do/undo operations apply a
+for the endgame-tablebase project. It implements flying kings, backward
+captures by men, mandatory capture, and the maximum-capture rule. Board-level
+do/undo operations apply a
 generated move, switch the side to move, and restore the complete prior state.
 
 Build and run:

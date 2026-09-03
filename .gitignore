@@ -1,0 +1,6 @@
+gwd9
+test_draughts
+*.o
+logs/*.txt
+gwd8/
+endgame7/
